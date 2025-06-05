@@ -249,3 +249,9 @@ function generateChart(data, result) {
         }
     });
 }
+
+// Agregar event listener al botón de analizar
+document.addEventListener('DOMContentLoaded', function() {
+    const analyzeBtn = document.getElementById('analyzeBtn');
+    analyzeBtn.addEventListener('click', processFile);
+});
